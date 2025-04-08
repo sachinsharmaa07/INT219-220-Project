@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background: linear-gradient(135deg, #006D77, #83C5BE);
+    color: #fff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #f4d35e;
+}
+.hero {
+    background: url('https://images.unsplash.com/photo-1596571880298-ddee5db8604c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 3rem;
+    border-radius: 15px;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+.btn {
+    display: inline-block;
+    background: #f4d35e;
+    color: #1a3c34;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background: #f4a261;
+}
+section {
+    padding: 6rem 2rem;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a3c34;
+    margin-bottom: 1.5rem;
+}
+p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #555;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card p, .card h3 {
+    padding: 1rem;
+    text-align: center;
+}
+.card h3 a {
+    color: #2e856e;
+    text-decoration: none;
+    font-weight: 500;
+}
+.card h3 a:hover {
+    color: #f4d35e;
+}
+.about, .impacts, .gallery {
+    background: #fff;
+}
+.blog-page {
+    background-size: cover;
+    background-attachment: fixed;
+}
+.blog-container {
+    max-width: 900px;
+    margin: 120px auto 60px;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.blog-container h1 {
+    font-size: 2.5rem;
+    color: #1a3c34;
+}
+.blog-container img {
+    width: 100%;
+    height: auto;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+}
+.quiz-page {
+    background-size: cover;
+    background-attachment: fixed;
+}
+.quiz-container {
+    max-width: 900px;
+    margin: 120px auto 60px;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.quiz-container h1 {
+    font-size: 2.5rem;
+    color: #1a3c34;
+}
+.question {
+    margin: 2rem 0;
+    text-align: left;
+}
+.question p {
+    font-weight: 500;
+    color: #2e856e;
+    margin-bottom: 1rem;
+}
+.question label {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: 300;
+}
+#score-display {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f4d35e;
+    color: #1a3c34;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+footer {
+    background: linear-gradient(135deg, #006D77, #83C5BE);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    font-weight: 300;
+}
+#chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #f4d35e;
+    color: #1a3c34;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+#chat-toggle:hover {
+    background: #f4a261;
+}
+#chat-bot {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    display: none;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.chat-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a3c34;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.chat-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    background: #f0f4f8;
+    border-radius: 10px;
+}
+.chat-box {
+    margin: 0.5rem 0;
+}
+.chat-bubble {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    border-radius: 15px;
+    max-width: 80%;
+}
+.ai-chat {
+    background: #2e856e;
+    color: #fff;
+}
+.user-chat {
+    background: #f4d35e;
+    color: #1a3c34;
+    margin-left: auto;
+    display: block;
+}
+.prompt-area {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.prompt-area input {
+    flex-grow: 1;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-weight: 300;
+}
+.prompt-area button {
+    background: #2e856e;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.prompt-area button:hover {
+    background: #1a3c34;
+}
+@media (max-width: 768px) {
+    nav ul { flex-direction: column; gap: 1rem; }
+    .hero h1 { font-size: 2rem; }
+    .hero p { font-size: 1rem; }
+    #chat-bot { width: 90%; height: 60vh; }
+}
