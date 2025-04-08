@@ -66,37 +66,3 @@ promptInput?.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') handleUserMessage();
 });
 submitBtn?.addEventListener('click', handleUserMessage);
-
-// Quiz Functionality
-const quizForm = document.getElementById('quiz-form');
-const scoreDisplay = document.getElementById('score-display');
-
-if (quizForm) {
-    const correctAnswers = {
-        q1: 'a',  // 9%
-        q2: 'b',  // 1.5 kg
-        q3: 'c',  // Glass
-        q4: 'a',  // Reduces landfill use
-        q5: 'd',  // Photosynthesis
-        q6: 'a',  // Reusing materials
-        q7: 'a',  // Germany
-        q8: 'c',  // Food waste
-        q9: 'c',  // 500 years
-        q10: 'c'  // Reducing consumption
-    };
-
-    quizForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        let score = 0;
-        const formData = new FormData(quizForm);
-
-        for (let i = 1; i <= 10; i++) {
-            const answer = formData.get(`q${i}`);
-            if (answer === correctAnswers[`q${i}`]) score++;
-        }
-
-        scoreDisplay.style.display = 'block';
-        scoreDisplay.innerHTML = `Your Score: ${score}/10<br>Great effort! Want to learn more? <a href="index.html">Go back</a>`;
-        quizForm.style.display = 'none';
-    });
-}
