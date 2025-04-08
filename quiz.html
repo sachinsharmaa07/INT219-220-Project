@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - WasteWise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="quiz-page" style="background-image: url('https://images.unsplash.com/photo-1503595856157-6c3d4729e4b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');">
+    <header>
+        <div class="logo">WasteWise</div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="quiz-container">
+        <h1>Test Your Waste IQ</h1>
+        <p>Answer these 10 questions to see how much you know!</p>
+        <form id="quiz-form" action="quiz.php" method="POST">
+            <div class="question">
+                <p>1. What percentage of plastic waste is recycled globally?</p>
+                <label><input type="radio" name="q1" value="a" required> a) 9%</label>
+                <label><input type="radio" name="q1" value="b"> b) 25%</label>
+                <label><input type="radio" name="q1" value="c"> c) 50%</label>
+                <label><input type="radio" name="q1" value="d"> d) 75%</label>
+            </div>
+            <div class="question">
+                <p>2. How much waste does the average person generate daily?</p>
+                <label><input type="radio" name="q2" value="a" required> a) 0.5 kg</label>
+                <label><input type="radio" name="q2" value="b"> b) 1.5 kg</label>
+                <label><input type="radio" name="q2" value="c"> c) 2.5 kg</label>
+                <label><input type="radio" name="q2" value="d"> d) 3.5 kg</label>
+            </div>
+            <div class="question">
+                <p>3. Which material takes the longest to decompose?</p>
+                <label><input type="radio" name="q3" value="a" required> a) Paper</label>
+                <label><input type="radio" name="q3" value="b"> b) Plastic</label>
+                <label><input type="radio" name="q3" value="c"> c) Glass</label>
+                <label><input type="radio" name="q3" value="d"> d) Aluminum</label>
+            </div>
+            <div class="question">
+                <p>4. What’s a key benefit of composting?</p>
+                <label><input type="radio" name="q4" value="a" required> a) Reduces landfill use</label>
+                <label><input type="radio" name="q4" value="b"> b) Generates energy</label>
+                <label><input type="radio" name="q4" value="c"> c) Creates plastic</label>
+                <label><input type="radio" name="q4" value="d"> d) Increases pollution</label>
+            </div>
+            <div class="question">
+                <p>5. Which is NOT a waste management method?</p>
+                <label><input type="radio" name="q5" value="a" required> a) Recycling</label>
+                <label><input type="radio" name="q5" value="b"> b) Incineration</label>
+                <label><input type="radio" name="q5" value="c"> c) Landfilling</label>
+                <label><input type="radio" name="q5" value="d"> d) Photosynthesis</label>
+            </div>
+            <div class="question">
+                <p>6. What does a "circular economy" promote?</p>
+                <label><input type="radio" name="q6" value="a" required> a) Reusing materials</label>
+                <label><input type="radio" name="q6" value="b"> b) Burning waste</label>
+                <label><input type="radio" name="q6" value="c"> c) Ocean dumping</label>
+                <label><input type="radio" name="q6" value="d"> d) Single-use items</label>
+            </div>
+            <div class="question">
+                <p>7. Which country recycles the most waste?</p>
+                <label><input type="radio" name="q7" value="a" required> a) Germany</label>
+                <label><input type="radio" name="q7" value="b"> b) Japan</label>
+                <label><input type="radio" name="q7" value="c"> c) USA</label>
+                <label><input type="radio" name="q7" value="d"> d) China</label>
+            </div>
+            <div class="question">
+                <p>8. What’s the most common landfill waste?</p>
+                <label><input type="radio" name="q8" value="a" required> a) Plastic</label>
+                <label><input type="radio" name="q8" value="b"> b) Paper</label>
+                <label><input type="radio" name="q8" value="c"> c) Food waste</label>
+                <label><input type="radio" name="q8" value="d"> d) Metal</label>
+            </div>
+            <div class="question">
+                <p>9. How long does a plastic bottle take to decompose?</p>
+                <label><input type="radio" name="q9" value="a" required> a) 50 years</label>
+                <label><input type="radio" name="q9" value="b"> b) 100 years</label>
+                <label><input type="radio" name="q9" value="c"> c) 500 years</label>
+                <label><input type="radio" name="q9" value="d"> d) 1000 years</label>
+            </div>
+            <div class="question">
+                <p>10. What’s the best way to reduce waste?</p>
+                <label><input type="radio" name="q10" value="a" required> a) Recycling</label>
+                <label><input type="radio" name="q10" value="b"> b) Reusing</label>
+                <label><input type="radio" name="q10" value="c"> c) Reducing consumption</label>
+                <label><input type="radio" name="q10" value="d"> d) All of the above</label>
+            </div>
+            <button type="submit" class="btn">See Your Score</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 WasteWise | Created by Sachin K23 DH | Contact: 12316496</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
